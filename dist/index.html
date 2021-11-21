@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="nav-header">
+        <i class="fas fa-bars" id="menu-button" value="true"></i>
+        <h1>ToDoLister</h1>
+    </header>
+
+    <div id="side-nav">
+        <h1>Projects</h1>
+        <a id="project-button">Add new project</a>
+        <div id="project-list">
+            
+        </div>
+    </div>
+
+    <main>
+        <div id="content-container">
+            
+            <div id="project-form-wrapper" style="display: none;">
+                <form id="project-form">
+                    <header>
+                        <h1>Add project</h1>
+                    </header>
+                    <section id="project-form-section">
+                        <div class="inputfield">
+                            <label>Name</label>
+                            <input type="text" class="input" name="project-name" id="project-name-input" required>
+                         </div>
+                         <div class="inputfield">
+                            <label>Description</label>
+                            <textarea id="project-descr-input">
+
+                            </textarea>
+                         </div>    
+                    </section>
+                    <footer>
+                        <a id="project-add-button">Add</a>
+                        <a id="project-close-button">Cancel</a>
+                    </footer>
+                </form>
+            </div>
+            <div id="todo-form-wrapper" style="display: none">
+                <form id="todo-form">
+                    <header>
+                        <h1>Add todo</h1>
+                    </header>
+                    <section id="todo-form-section">
+                        <div class="inputfield">
+                            <label>Name</label>
+                            <input type="text" class="input" name="todo-name" id="todo-name-input" required>
+                         </div>
+                         <div class="inputfield">
+                            <label>Description</label>
+                            <textarea id="todo-descr-input">
+
+                            </textarea>
+                         </div>
+                         <div class="inputfield">
+                            <label>Date</label>
+                            <input type="date" id="todo-date-input">
+                         </div>      
+                    </section>
+                    <footer>
+                        <a id="todo-add-button">Add</a>
+                        <a id="todo-close-button">Cancel</a>
+                    </footer>
+                </form>
+            </div>
+            <div id="todo-edit-wrapper" style="display: none">
+                <form id="todo-edit-form">
+                    <header>
+                        <h1>Edit todo</h1>
+                    </header>
+                    <section id="todo-form-section">
+                        <div class="inputfield">
+                            <label>Name</label>
+                            <input type="text" class="input" name="todo-name" id="edit-name-input" required>
+                         </div>
+                         <div class="inputfield">
+                            <label>Description</label>
+                            <textarea id="edit-descr-input">
+                 
+                            </textarea>
+                         </div>
+                         <div class="inputfield">
+                            <label>Date</label>
+                            <input type="date" id="edit-date-input">
+                         </div>      
+                    </section>
+                    <footer>
+                        <a id="todo-edit-button2">Edit</a>
+                        <a id="todo-edit-close-button">Cancel</a>
+                    </footer>
+                </form>
+            </div>
+
+            <div id="content">
+                <header>
+                    <div id="project-title-wrapper">
+                        <h1 id="project-title" counter="0">Welcome</h1>
+                        <i class="fas fa-plus" id="todo-form-button"></i>
+                        <i class="fas fa-trash-alt" id="project-delete-button"></i>
+                    </div>
+                    <p id="project-descr">This is a default project</p>
+                </header>
+                <div id="todo-list">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
